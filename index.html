@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio - Encriptador</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="titulo">Desafio <p id="titulo2">Encriptador</p></h1>
+    </header>
+
+    <main>
+
+        <form>
+            <fieldset>
+                <div>  
+                    <!-- <label for="texto-usuario"><h2>Texto para encriptar:</h2></label> -->
+
+                    <textarea
+                        cols="40"
+                        rows="5"
+                        id="texto-usuario"
+                        style="text-transform:lowercase;"
+                        onkeyup="javascript:this.value=this.value.toLowerCase();"
+                        placeholder="ingresa aqui el texto para encriptar"
+                        required
+                    ></textarea>
+
+   
+                </div>
+            </fieldset>
+            <div class="cajon-btn">
+                <p id="status">Status</p>
+
+                <input 
+                    type="button" 
+                    value="CIFRAR" 
+                    onclick="capturarTextoU()"
+                    >  
+
+                <input 
+                    type="button" 
+                    value="DESCIFRAR" 
+                    id="btn-descifrar" 
+                    onclick="desencriptar()"
+                    >
+
+                <input 
+                    type="button" 
+                    value="COPIAR" 
+                    id="btn-copiar"
+                    onclick="copiarTexto()"
+                    >
+            </div>
+
+
+
+        </form>
+
+    </main>
+
+    <footer>
+        <h3>Creado por <p id="titulo3">Danis E. Maldonado M.</p></h3>
+        <p>Creado Febrero 2024</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
